@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkslateblue;
+    .menuSection {
+        height: 60vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .logoContainer{
+            .logo {
+                text-align: center;
+                margin-top: 20%;
+            }
+        }
+        .startButtonContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .startButton {
+                margin-top: 150px;
+                width: 100px;
+                height: 50px;
+            }
+        }
+    }
+
+    .gameSection {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .timerContainer {
+            margin-top: 10px;
+            height: 70px;
+            width: 15%;
+            margin-bottom: 35px;
+            border: solid black;
+
+            .timerDisplay {
+                font-size: 60px;
+                margin-left: 5px;
+                color: crimson;
+            }
+        }
+
+        .gameBox {
+            width: 40%;
+            height: 70%;
+            border: solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            perspective: 1000px;
+
+            .card {
+                border: solid red;
+                margin: 5px;
+                position: relative;
+                transform: scale(1);
+                transform-style: preserve-3d;
+                transition: transform .5s;
+                background-color: yellow;
+
+                .backFace {
+                    position: absolute;
+                    width: 90%;
+                    height: 90%;
+                    margin-left: 5px;
+                    backface-visibility: hidden;
+                }
+
+                .frontFace {
+                    position: absolute;
+                    width: 90%;
+                    height: 90%;
+                    backface-visibility: hidden;
+                    transform: rotateY(180deg);
+                }
+
+                &.flip {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+
+        .resetButton {
+            margin-top: 60px;
+            margin-bottom: 40px;
+            width: 15%;
+            height: 70px;
+        }
+    }
+
+    .endSection {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .currentFinishTime {
+            height: 20%;
+            width: 35%;
+            border: solid black;
+        }
+
+        .personalBestTimeDisplay {
+            height: 20%;
+            width: 35%;
+            border: solid black;
+        }
+
+        .tryAgainButton {
+            width: 35%;
+            height: 20%;
+        }
+    }
+}
