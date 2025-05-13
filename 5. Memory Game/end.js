@@ -28,6 +28,12 @@ function currentFinishTimeRender() {
         localStorage.setItem('personalBestTime', `${storedMinutes}:${storedSeconds}:${storedMilliseconds}`);
     }
 
+    const currentFinishTimeText = document.createElement('h2');
+    currentFinishTimeText.className = 'currentFinishTimeText';
+    currentFinishTimeText.textContent = 'Recent Finish Time:';
+    currentFinishTimeText.style.color = 'red';
+    endSection.appendChild(currentFinishTimeText);
+
     const currentFinishTime = document.createElement('div');
     currentFinishTime.className = 'currentFinishTime';
     endSection.appendChild(currentFinishTime);
@@ -43,13 +49,19 @@ function personalBestTimeRender() {
     
     const displayTime = personalBestTime === '999:59:99' ? '00:00:00' : personalBestTime;
 
+    const personalBestTimeText = document.createElement('h2');
+    personalBestTimeText.className = 'currentFinishTimeText';
+    personalBestTimeText.textContent = 'Your Personal Best:';
+    personalBestTimeText.style.color = 'yellow';
+    endSection.appendChild(personalBestTimeText);
+
     const personalBestTimeDisplay = document.createElement('div');
     personalBestTimeDisplay.className = 'personalBestTimeDisplay';
     endSection.appendChild(personalBestTimeDisplay);
 
     const personalBestTimeResult = document.createElement('h1');
     personalBestTimeResult.className = 'personalBestTimeResult';
-    personalBestTimeResult.textContent = `Personal Best: ${displayTime}`;
+    personalBestTimeResult.textContent = `${displayTime}`;
     personalBestTimeDisplay.appendChild(personalBestTimeResult);
 }
 
@@ -57,7 +69,7 @@ function tryAgainButtonRender() {
     const tryAgainButton = document.createElement('input');
     tryAgainButton.className = 'tryAgainButton';
     tryAgainButton.type = 'button';
-    tryAgainButton.value = 'Try Again';
+    tryAgainButton.value = 'Try Again?';
     endSection.appendChild(tryAgainButton);
 
     tryAgainButton.addEventListener('click', () => {

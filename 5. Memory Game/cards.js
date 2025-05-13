@@ -13,6 +13,7 @@ export function card1(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'red';
     cardFrontFace.src = 'assets/c-sharp-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -31,6 +32,7 @@ function card2(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'blue';
     cardFrontFace.src = 'assets/html-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -49,6 +51,7 @@ function card3(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'white';
     cardFrontFace.src = 'assets/node-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -67,6 +70,7 @@ function card4(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'pink';
     cardFrontFace.src = 'assets/python-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -85,6 +89,7 @@ function card5(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'gray';
     cardFrontFace.src = 'assets/vscode-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -103,6 +108,7 @@ function card6(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'green';
     cardFrontFace.src = 'assets/c-plusplus-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -121,6 +127,7 @@ function card7(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'red';
     cardFrontFace.src = 'assets/c-sharp-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -139,6 +146,7 @@ function card8(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'blue';
     cardFrontFace.src = 'assets/html-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -157,6 +165,7 @@ function card9(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'white';
     cardFrontFace.src = 'assets/node-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -175,6 +184,7 @@ function card10(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'pink';
     cardFrontFace.src = 'assets/python-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -193,6 +203,7 @@ function card11(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'gray';
     cardFrontFace.src = 'assets/vscode-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
@@ -211,6 +222,7 @@ function card12(gameBox) {
     card.appendChild(cardBackFace);
 
     const cardFrontFace = document.createElement('img');
+    cardFrontFace.style.backgroundColor = 'green';
     cardFrontFace.src = 'assets/c-plusplus-16-svgrepo-com.svg'
     cardFrontFace.className = 'frontFace';
     card.appendChild(cardFrontFace);
